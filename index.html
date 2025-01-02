@@ -349,97 +349,19 @@ gtag("config", "G-XDXX9DG3FW");
 					
 					
 					
-					<div class="newsletterContainer">
-
-							<h4>Melden Sie sich für unseren Newsletter an:</h4>
-
-							<!-- begin newsletter signup form -->
-
-							<!-- saved from url=(0014)about:internet --><!--This has been added to automatically allow browsers to execute JavaScript when embedded-->
-							
-							<div id='warning_eng'></div>
-
-							<div id="subscribe-form"><div class="required-explain"><span style="color:red;" class="red">*</span>  Indicates a required field<br/></div>
-
-									<form action="https://newsmail.com/mailing_lists/change_request" id="RequestChangeForm" method="post" accept-charset="utf-8">
-										<div style="display:none;">
-											<input type="hidden" name="_method" value="POST"/>
-										</div>    
-										<input type="hidden" name="data[Subscribe][type]" value="subscribe" id="SubscribeType"/>    
-										<input type="hidden" name="data[Subscribe][lang]" value="eng" id="SubscribeLang"/>    
-										<input type="hidden" name="data[Subscribe][mailing_list_id]" value="5fce9a04-bc10-47a1-99a6-4ee8d8e6f13b" id="SubscribeMailingListId"/>    
-										<input type="hidden" name="data[Subscribe][success]" value="https://paratex.com/newsletter-success/" id="SubscribeSuccess"/>    
-										<input type="hidden" name="data[Subscribe][failure]" value="https://paratex.com/newsletter-fail/" id="SubscribeFailure"/>    
-										<div class="input email">
-											<span style="color:red;" class="red">*</span> 
-											<label for="SubscribeEmail">Email Address:</label>
-											<input name="data[Subscribe][email]" class="required" required="required" type="email" id="SubscribeEmail"/>
-
-											<button id="submit_button" onclick="return validate();" type="submit">Abbonieren</button>
-										</div>            
-											
-										<div class="replacement-fields"></div>
-							                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-								                
-								    </form>
-
-							</div>
-
-							<script type="text/javascript">
-							    function validate () {
-							        var validates = true;
-							        $(".validation-error").remove();
-							        $(".required").each(function() {
-							            if (typeof $(this).attr("id") != "undefined") {
-							                if ($.trim($(this).val()) === "") {
-							                    validates = false;
-							                    $(this).parent().append($("<div/>").css({"color":"red","font-weight":"bold"}).addClass("validation-error").html("This field is required"));
-							                }
-							            }
-							            else {
-							                var year = document.getElementById('ReplacementCodeDobValueYear').value;
-							                var month = document.getElementById('ReplacementCodeDobValueMonth').value;
-							                var day = document.getElementById('ReplacementCodeDobValueDay').value;
-							                if (year==="" || month==="" || day==="") {
-							                    validates = false;
-							                    var div = document.getElementById('dobDiv');
-							                    $(".dobDiv").append($("<div/>").css({"color":"red","font-weight":"bold"}).addClass("validation-error").html("This field is required"));
-							                }
-							            }
-							        });
-
-							        if(validates) {
-							            $("#RequestChangeForm").submit();
-							        }
-							        else {
-							            return false;
-							        }
-							    }
-								
-								// Show the warning message to users of IE8 and IE9
-								var rv = -1;
-							    if (navigator.appName == 'Microsoft Internet Explorer') {
-								   var ua = navigator.userAgent;
-								   var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
-								   if (re.exec(ua) != null)
-								  	  rv = parseFloat( RegExp.$1 );
-							    }
-							    
-								if (rv==8.0 || rv==9.0) {
-									if ($("#warning_jp").length!=0) {
-										$("#warning_jp").html('このフォームをご利用頂くには、ブラウザを最新のバージョンに更新されることをお勧めします');
-									} else {
-										$("#warning_eng").html('Please update the browser version to run this form as expected.');
-									}
-									
-								}
-							</script>
+					
 
 
 
-							<!-- end newsletter signup form -->
 
-						</div>
+
+
+
+
+
+
+
+					
 						<div id="contactColumns">
 							<div id="contactInformation">
 								<ul class="socialLinks">
